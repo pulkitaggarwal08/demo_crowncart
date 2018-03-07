@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/splash_background">
+
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="@dimen/app_logo_width"
+        android:layout_height="@dimen/app_logo_height"
+        android:layout_centerInParent="true"
+        android:contentDescription="@null"
+        android:scaleType="fitXY"
+        android:src="@mipmap/splash_logo" />
+
+    <LinearLayout
+        android:id="@+id/title_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-12dp"
+        android:orientation="horizontal">
+
+        <com.innovative.crownkart.views.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_crown_title"
+            android:textColor="#3AB0E1"
+            android:textSize="32sp"
+            app:font="@string/semibold_sans" />
+
+        <com.innovative.crownkart.views.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_kart_title"
+            android:textColor="#FF0"
+            android:textSize="36sp"
+            app:font="@string/semibold_sans" />
+
+    </LinearLayout>
+
+    <com.innovative.crownkart.views.CustomTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_container"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="6dp"
+        android:gravity="center"
+        android:text="For   Fashion  Lovers"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:font="@string/regular_glegoo" />
+
+    <Button
+        android:id="@+id/btn_temp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+</RelativeLayout>

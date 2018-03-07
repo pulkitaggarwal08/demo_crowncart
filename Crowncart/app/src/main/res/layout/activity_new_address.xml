@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_new_address"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/light_grey"
+        tools:context="com.innovative.crownkart.activities.NewAddressActivity">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/new_address_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/blue"
+            android:gravity="center"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/MyDarkToolbarStyle"
+            app:titleTextColor="@color/white" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/new_address_toolbar"
+            android:layout_margin="10dp"
+            android:background="@color/white">
+
+            <com.innovative.crownkart.views.CustomTextView
+                android:id="@+id/iv_first_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="@string/first_name"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:textColor="@color/medium_grey"
+                app:font="@string/semibold_sans" />
+
+            <com.innovative.crownkart.views.CustomTextView
+                android:id="@+id/iv_star_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/iv_first_name"
+                android:gravity="center"
+                android:text="@string/star"
+                android:textColor="@color/red"
+                app:font="@string/semibold_sans" />
+
+            <com.innovative.crownkart.views.CustomEditText
+                android:id="@+id/et_first_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_first_name"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/little_rounded_corner"
+                android:hint="@string/first_name"
+                android:textColor="@color/medium_grey"
+                app:font="@string/semibold_sans" />
+
+            <com.innovative.crownkart.views.CustomTextView
+                android:id="@+id/iv_last_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/et_first_name"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="@string/last_name"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:textColor="@color/medium_grey"
+                app:font="@string/semibold_sans" />
+
+            <com.innovative.crownkart.views.CustomTextView
+                android:id="@+id/iv_star_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/et_first_name"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@+id/iv_last_name"
+                android:gravity="center"
+                android:text="@string/star"
+                android:textColor="@color/red"
+                app:font="@string/semibold_sans" />
+
+            <com.innovative.crownkart.views.CustomEditText
+                android:id="@+id/et_last_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_last_name"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/little_rounded_corner"
+                android:hint="@string/last_name"
+                android:textColor="@color/medium_grey"
+                app:font="@string/semibold_sans" />
+
+            <com.innovative.crownkart.views.CustomTextView
+                android:id="@+id/iv_address_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/et_last_name"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="@string/address"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:textColor="@color/medium_grey"
+                app:font="@string/semibold_sans" />
+
+            <com.innovative.crownkart.views.CustomTextView
+                android:id="@+id/iv_star_three"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/et_last_name"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@+id/iv_address_name"
+                android:gravity="center"
+                android:text="@string/star"
+                android:textColor="@color/red"
+                app:font="@string/semibold_sans" />
+
+            <com.innovative.crownkart.views.CustomEditText
+                android:id="@+id/et_address_name"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_below="@+id/iv_address_name"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/little_rounded_corner"
+                android:gravity="top"
+                android:hint="@string/address"
+                android:textColor="@color/medium_grey"
+                app:font="@string/semibold_sans" />
+
+
+            <com.innovative.crownkart.views.CustomTextView
+                android:id="@+id/iv_landmark_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/et_address_name"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="@string/landmark"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:textColor="@color/medium_grey"
+                app:font="@string/semibold_sans" />
+
+            <com.innovative.crownkart.views.CustomEditText
+                android:id="@+id/et_landmark_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_landmark_name"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/little_rounded_corner"
+                android:hint="@string/landmark"
+                android:textColor="@color/medium_grey"
+                app:font="@string/semibold_sans" />
+
+            <com.innovative.crownkart.views.CustomTextView
+                android:id="@+id/iv_pincode_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/et_landmark_name"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="@string/pincode"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:textColor="@color/medium_grey"
+                app:font="@string/semibold_sans" />
+
+            <com.innovative.crownkart.views.CustomTextView
+                android:id="@+id/iv_star_four"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/et_landmark_name"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@+id/iv_pincode_name"
+                android:gravity="center"
+                android:text="@string/star"
+                android:textColor="@color/red"
+                app:font="@string/semibold_sans" />
+
+            <com.innovative.crownkart.views.CustomEditText
+                android:id="@+id/et_pincode_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_pincode_name"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/little_rounded_corner"
+                android:gravity="top"
+                android:hint="@string/pincode"
+                android:textColor="@color/medium_grey"
+                app:font="@string/semibold_sans" />
+
+            <com.innovative.crownkart.views.CustomTextView
+                android:id="@+id/iv_city_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/et_pincode_name"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="@string/city"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:textColor="@color/medium_grey"
+                app:font="@string/semibold_sans" />
+
+            <com.innovative.crownkart.views.CustomTextView
+                android:id="@+id/iv_star_five"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/et_pincode_name"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@+id/iv_city_name"
+                android:gravity="center"
+                android:text="@string/star"
+                android:textColor="@color/red"
+                app:font="@string/semibold_sans" />
+
+            <com.innovative.crownkart.views.CustomEditText
+                android:id="@+id/et_city_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_city_name"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/little_rounded_corner"
+                android:gravity="top"
+                android:hint="@string/city"
+                android:textColor="@color/medium_grey"
+                app:font="@string/semibold_sans" />
+
+            <com.innovative.crownkart.views.CustomTextView
+                android:id="@+id/iv_state_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/et_city_name"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="@string/state"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:textColor="@color/medium_grey"
+                app:font="@string/semibold_sans" />
+
+            <com.innovative.crownkart.views.CustomTextView
+                android:id="@+id/iv_star_six"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/et_city_name"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@+id/iv_state_name"
+                android:gravity="center"
+                android:text="@string/star"
+                android:textColor="@color/red"
+                app:font="@string/semibold_sans" />
+
+            <com.innovative.crownkart.views.CustomEditText
+                android:id="@+id/et_state_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_state_name"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/little_rounded_corner"
+                android:gravity="top"
+                android:hint="@string/state"
+                android:textColor="@color/medium_grey"
+                app:font="@string/semibold_sans" />
+
+            <com.innovative.crownkart.views.CustomTextView
+                android:id="@+id/iv_country_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/et_state_name"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="@string/country"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:textColor="@color/medium_grey"
+                app:font="@string/semibold_sans" />
+
+            <com.innovative.crownkart.views.CustomTextView
+                android:id="@+id/iv_star_seven"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/et_state_name"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@+id/iv_country_name"
+                android:gravity="center"
+                android:text="@string/star"
+                android:textColor="@color/red"
+                app:font="@string/semibold_sans" />
+
+            <Spinner
+                android:id="@+id/spinner_country_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_country_name"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/little_rounded_corner"
+                android:gravity="top"
+                android:spinnerMode="dialog"/>
+
+            <com.innovative.crownkart.views.CustomTextView
+                android:id="@+id/iv_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spinner_country_name"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="@string/phone"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:textColor="@color/medium_grey"
+                app:font="@string/semibold_sans" />
+
+            <com.innovative.crownkart.views.CustomTextView
+                android:id="@+id/iv_star_eight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spinner_country_name"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@+id/iv_phone"
+                android:gravity="center"
+                android:text="@string/star"
+                android:textColor="@color/red"
+                app:font="@string/semibold_sans" />
+
+            <com.innovative.crownkart.views.CustomEditText
+                android:id="@+id/et_phone_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_phone"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/little_rounded_corner"
+                android:gravity="top"
+                android:hint="@string/phone"
+                android:textColor="@color/medium_grey"
+                app:font="@string/semibold_sans" />
+
+            <com.innovative.crownkart.views.CustomButton
+                android:id="@+id/btn_save_continue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/et_phone_name"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/rounded_background"
+                android:padding="10dp"
+                android:text="@string/save_continue" />
+
+            <com.innovative.crownkart.views.CustomButton
+                android:id="@+id/btn_cancel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/et_phone_name"
+                android:layout_marginBottom="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@+id/btn_save_continue"
+                android:background="@drawable/rounded_background"
+                android:text="@string/cancel" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+</ScrollView>

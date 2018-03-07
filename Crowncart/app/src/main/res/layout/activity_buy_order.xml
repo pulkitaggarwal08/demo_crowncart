@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_buy_order"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.innovative.crownkart.activities.BuyOrderActivity">
+
+    <include
+        android:id="@+id/single_product_detail_toolbar"
+        layout="@layout/toolbar" />
+
+    <com.innovative.crownkart.views.CustomTextView
+        android:id="@+id/iv_one"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignBottom="@+id/tv_product_name"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="15dp"
+        android:background="@drawable/circle"
+        android:gravity="center"
+        android:text="@string/one"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:font="@string/semibold_sans" />
+
+    <com.innovative.crownkart.views.CustomTextView
+        android:id="@+id/tv_product_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/single_product_detail_toolbar"
+        android:layout_toEndOf="@+id/iv_one"
+        android:layout_toRightOf="@+id/iv_one"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:text="@string/login_details"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:font="@string/semibold_sans" />
+
+    <com.innovative.crownkart.views.CustomTextView
+        android:id="@+id/tv_signed_in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_one"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:text="@string/signed_in_as"
+        android:textAppearance="?android:textAppearanceSmall"
+        android:textColor="@color/grey"
+        android:textStyle="bold"
+        app:font="@string/semibold_sans" />
+
+    <com.innovative.crownkart.views.CustomTextView
+        android:id="@+id/tv_logged_in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_signed_in"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:text="@string/login_id"
+        android:textAppearance="?android:textAppearanceSmall"
+        android:textColor="@color/medium_grey"
+        android:textStyle="bold"
+        app:font="@string/semibold_sans" />
+
+    <View
+        android:id="@+id/line_three"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/tv_logged_in"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/medium_grey" />
+
+    <com.innovative.crownkart.views.CustomTextView
+        android:id="@+id/iv_two"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignBottom="@+id/tv_shipment_detail"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="15dp"
+        android:background="@drawable/circle"
+        android:gravity="center"
+        android:text="@string/two"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:font="@string/semibold_sans" />
+
+    <com.innovative.crownkart.views.CustomTextView
+        android:id="@+id/tv_shipment_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line_three"
+        android:layout_toEndOf="@+id/iv_one"
+        android:layout_toRightOf="@+id/iv_one"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:text="@string/shipment_details"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:font="@string/semibold_sans" />
+
+    <com.innovative.crownkart.views.CustomButton
+        android:id="@+id/add_new_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_shipment_detail"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rounded_background"
+        android:text="@string/add_new_address"
+        android:visibility="gone" />
+
+    <View
+        android:id="@+id/line_four"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/add_new_address"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/medium_grey" />
+
+    <com.innovative.crownkart.views.CustomTextView
+        android:id="@+id/tv_shipment_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/line_three"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:text="@string/edit"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:font="@string/semibold_sans" />
+
+    <com.innovative.crownkart.views.CustomTextView
+        android:id="@+id/iv_three"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignBottom="@+id/tv_bag_summary"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="15dp"
+        android:background="@drawable/circle"
+        android:gravity="center"
+        android:text="@string/three"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:font="@string/semibold_sans" />
+
+    <com.innovative.crownkart.views.CustomTextView
+        android:id="@+id/tv_bag_summary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line_four"
+        android:layout_toEndOf="@+id/iv_one"
+        android:layout_toRightOf="@+id/iv_one"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:text="@string/bag_summary"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:font="@string/semibold_sans" />
+
+    <RelativeLayout
+        android:id="@+id/activity_view_cart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tv_bag_summary">
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+
+        <android.support.v4.widget.NestedScrollView
+            android:id="@+id/sv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_cart_items"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="8dp" />
+
+                <com.innovative.crownkart.views.CustomTextView
+                    android:id="@+id/cashback"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rv_cart_items"
+                    android:layout_marginTop="10dp"
+                    android:padding="10dp"
+                    android:text="@string/cashback"
+                    android:textStyle="bold" />
+
+                <com.innovative.crownkart.views.CustomTextView
+                    android:id="@+id/tv_price_one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/rv_cart_items"
+                    android:layout_marginTop="10dp"
+                    android:drawableEnd="@mipmap/rupee"
+                    android:drawableRight="@mipmap/rupee"
+                    android:padding="10dp"
+                    android:text="price"
+                    android:textColor="@color/green"
+                    android:textStyle="bold"
+                    app:font="@string/semibold_sans" />
+
+                <View
+                    android:id="@+id/line2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_below="@+id/cashback"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/grey" />
+
+                <com.innovative.crownkart.views.CustomTextView
+                    android:id="@+id/order_summary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/cashback"
+                    android:layout_marginTop="10dp"
+                    android:padding="10dp"
+                    android:text="@string/order_summary"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    app:font="@string/semibold_sans" />
+
+                <com.innovative.crownkart.views.CustomTextView
+                    android:id="@+id/bag_total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/order_summary"
+                    android:padding="10dp"
+                    android:text="@string/bag_total"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    app:font="@string/semibold_sans" />
+
+                <com.innovative.crownkart.views.CustomTextView
+                    android:id="@+id/tv_price_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/order_summary"
+                    android:drawableEnd="@mipmap/rupee"
+                    android:drawableRight="@mipmap/rupee"
+                    android:padding="10dp"
+                    android:text="@string/price"
+                    android:textColor="@color/green"
+                    android:textStyle="bold"
+                    app:font="@string/semibold_sans" />
+
+                <View
+                    android:id="@+id/line3"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_below="@+id/bag_total"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/grey" />
+
+                <com.innovative.crownkart.views.CustomTextView
+                    android:id="@+id/order_total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/line3"
+                    android:layout_marginTop="10dp"
+                    android:padding="10dp"
+                    android:text="@string/order_total"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    app:font="@string/semibold_sans" />
+
+                <com.innovative.crownkart.views.CustomTextView
+                    android:id="@+id/tv_price_three"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/line3"
+                    android:layout_marginTop="10dp"
+                    android:drawableEnd="@mipmap/rupee"
+                    android:drawableRight="@mipmap/rupee"
+                    android:padding="10dp"
+                    android:text="@string/price"
+                    android:textColor="@color/green"
+                    android:textStyle="bold"
+                    app:font="@string/semibold_sans" />
+
+
+            </RelativeLayout>
+        </android.support.v4.widget.NestedScrollView>
+    </RelativeLayout>
+</RelativeLayout>

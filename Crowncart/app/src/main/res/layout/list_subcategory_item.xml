@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:orientation="vertical">
+
+    <com.innovative.crownkart.views.CustomTextView
+        android:id="@+id/expandedListItem"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:gravity="center_vertical"
+        android:paddingBottom="7dp"
+        android:paddingLeft="60dp"
+        android:paddingTop="7dp"
+        android:textSize="14sp"
+        android:textColor="@color/blue"
+        app:font="@string/regular_sans" />
+
+    <View
+        android:id="@+id/empty_line_view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/light_grey" />
+
+</LinearLayout>
